@@ -26,13 +26,23 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] Mention two parts of Express that you learned about this week.
 
+I learned that Express makes it easy to set up and implement a server. I learned about express router to organize and encapsulate endpoints. I also learned about express middleware and all the different ways to implement them.
+
 - [ ] Describe Middleware?
+
+Middle ware is code that is ran between or in the middle of the request being made and the response being given. It can filter, authenticate, log, or change data passed through, just to name a few.
 
 - [ ] Describe a Resource?
 
+A resource is an object typically containing key value pairs. It can be passed in to or returned from endpoints
+
 - [ ] What can the API return to help clients know if a request was successful?
 
+It can send a 200 status code and a affirative message back. ex) res.status(200).json({ message: Success! })
+
 - [ ] How can we partition our application into sub-applications?
+
+Via the use of express router and specified endpoints.
 
 ## Project Setup
 
