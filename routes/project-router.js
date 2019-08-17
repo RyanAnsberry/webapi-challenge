@@ -70,7 +70,7 @@ router.delete('/:id', async (req, res) => {
 });
 
 // Get project actions
-router.get('/:id', async (req, res) => {
+router.get('/:id/actions', async (req, res) => {
     try {
         const { id } = req.params;
         const projectActions = await Projects.getProjectActions(id);
@@ -81,3 +81,6 @@ router.get('/:id', async (req, res) => {
         });
     }
 })
+
+
+module.exports = router;
